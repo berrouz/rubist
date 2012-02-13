@@ -1,0 +1,108 @@
+- What is Ruby
+  dynamic programming language, written in C, non-compiled, interpreted, reflective, object-oriented programming language
+
+- When it was designed and developed, by whom
+  mid 1990s by Yukihiro Matzumoto, appeared only in 1995
+- Versions of Ruby
+  0.95 Dec 21 1995
+  1.0 Dec 25 1996
+  1.3x
+  1.4x
+  1.5x
+  1.8x
+  1.9.1
+  1.9.2
+  1.9.3-p0 Oct 30 2011
+  2.0 in development
+- Explain the use of $ global variable
+- What is class
+- What is Nil
+- What is True/False
+- What is Object
+- What is BasicObject
+- What is Module
+- What is the difference between Class & Module
+- What is Ternary Operator
+- Ruby convention
+- Inheritance
+- OOP in Ruby
+- What is the difference between include and extend
+- What is Fiber
+- What is Proc
+- What is lambda
+- What is the difference between lambda & Proc
+- Where could we use Proc and where lambda
+- When should we use Class and when Module
+- What is self
+- What is attr_accessor
+- What is private, public, protected access control
+- What is block
+- Ways to invoke block
+- Exceptions
+- Thread in Ruby
+- What is initialize method in Ruby
+- What is super in Ruby
+- What is new and initialize?
+- What does initialize method return, why?
+- Can we change return value for initialize method?
+- Allowed characters for methods, constants, name of the classes
+- What is object_id
+- What is idiom a ||= b
+- What is the difference between Symbol and String
+- Ways to invoke method on the object
+- What is Object
+- What is Class
+- What is the difference between class and istance variable, method
+- What is dynamic typing in Ruby
+- Multiple inheritance
+- Ways to create Class
+- What is Metaprogramming
+- Where to use Metaprogramming
+- Ways to invoke system call
+- What is distributed programming
+- What is Socket
+- What is the use of Destructive Method
+- What is the use of load and require in Ruby
+- What is the use of autoload in Ruby
+- How do nil and false differ
+- How is visibility of methods change in Ruby
+- What are the rules and conventions to be followed in Ruby for naming a method
+- How is class method defined in Ruby
+- What are the Operators available in Ruby
+- What are the looping structure available in Ruby
+- What is the scope of local variable
+- What are the OOP supported by Ruby
+- Garbage collection in Ruby
+- Environment Variables in Ruby
+- What are Float, Dig and Max
+- What kind of conditions ruby support
+- Difference between puts and print
+- What is Agile methodology
+- What are Agile methodology's Processes
+- Is there any technology apart from agile which we can use
+- What are the servers supported by ruby on rails application
+- method overloading in ruby
+- method overriding in ruby
+- Describe the singleton design pattern and how you might use it in practice
+- Describe the MVC design pattern in Ruby
+- Big O notation in Ruby
+- AND, OR, XOR and NOT in Ruby
+- Depth first tree traversal in Ruby
+- String interpolation
+- Duck typing
+- How to undersand 'Everythin is expression'
+- What is dynamic reflection
+- Exception handling
+- Unicode Support
+- What is method_missing
+- Ruby Equality And Object Comparison
+- How A Ruby Case Statement Works
+- How do you write to STDOUT in Ruby?
+- Ruby language’s weaknesses
+- Compare and contrast Ruby with your second-favorite language
+- What is IO in Ruby
+- What is the super class of Module?
+- What is the difference between a block, lamda and proc
+- What do you like about Ruby
+- What is polymorphism
+- What is overriding and oveloading
