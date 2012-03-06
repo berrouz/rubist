@@ -1,108 +1,340 @@
 - What is Ruby
-  dynamic programming language, written in C, non-compiled, interpreted, reflective, object-oriented programming language
+
+ # dynamic programming language, written in C, non-compiled, interpreted, reflective, object-oriented programming language
 
 - When it was designed and developed, by whom
-  mid 1990s by Yukihiro Matzumoto, appeared only in 1995
+
+ # mid 1990s by Yukihiro Matzumoto, appeared only in 1995
+ 
 - Versions of Ruby
-  0.95 Dec 21 1995
-  1.0 Dec 25 1996
-  1.3x
-  1.4x
-  1.5x
-  1.8x
-  1.9.1
-  1.9.2
-  1.9.3-p0 Oct 30 2011
-  2.0 in development
+
+ # 0.95 Dec 21 1995
+ # 1.0 Dec 25 1996
+ # 1.3x
+ # 1.4x
+ # 1.5x
+ # 1.8x
+ # 1.9.1
+ # 1.9.2
+ # 1.9.3-p0 Oct 30 2011
+ # 2.0 in development
+ 
 - Explain the use of $ global variable
+
+ # Before initialization $var has nil as a value. Global variables should be used sparingly. The are dangerous because they can be written to from anywhere.
+ # Global variables can be traced.
+ 
 - What is class
+
+ # class is a custom type of data. Classes could have fields and methods.
+ 
 - What is Nil
+ 
+ # nil.class => NilClass
+ # nil == nil
+ # nil.object_id = 4
+ 
 - What is True/False
+
+ # true/false realized as objects of TrueClass and FalseClass. They are both singletons. That's why false == false && true == true
+ 
 - What is Object
+
+ # Object is the root of Ruby's class hierarchy. Its methods are available to all classes unless 
+ # explicitly overriden.
+
 - What is BasicObject
+
+ # BasicObject is the parent class of all classes in Ruby. It's an explicit blank class.
+ # BasicObject can be used for creating object hierarchies independent of Ruby's object hierarchy, 
+ # proxy objects like the Delegator class, or other uses where namespace pollution from Ruby's methods and classes must be avoided.
+ 
+ 
 - What is Module
+
 - What is the difference between Class & Module
+
 - What is Ternary Operator
+
 - Ruby convention
+
 - Inheritance
+
 - OOP in Ruby
+
 - What is the difference between include and extend
+
+ # include adds methods from Module as instance methods, extend adds as class methods
+ 
 - What is Fiber
+
 - What is Proc
+
 - What is lambda
+
 - What is the difference between lambda & Proc
+
 - Where could we use Proc and where lambda
+
 - When should we use Class and when Module
+
 - What is self
+
+# self refers to the current receiver object. It might be class( an object of class Class) || be an instance of particular class. 
+
 - What is attr_accessor
+
+# method which creates settes and getters 
+
 - What is private, public, protected access control
+
+# public - explicit receiver, explicit SELF receiver and implicit SELF receiver
+# private - no explicit receiver, no explicit SELF receiver - ONLY implicit receiver
+# protected - no explicit receiver, explicit SELF receiver OR implicit receiver
+
 - What is block
+
 - Ways to invoke block
+
 - Exceptions
+
 - Thread in Ruby
+
 - What is initialize method in Ruby
+
 - What is super in Ruby
+
 - What is new and initialize?
+
 - What does initialize method return, why?
+
 - Can we change return value for initialize method?
+
 - Allowed characters for methods, constants, name of the classes
+
 - What is object_id
+
 - What is idiom a ||= b
+
 - What is the difference between Symbol and String
+
 - Ways to invoke method on the object
+
 - What is Object
+
 - What is Class
+
 - What is the difference between class and istance variable, method
+
 - What is dynamic typing in Ruby
+
 - Multiple inheritance
+
 - Ways to create Class
+
 - What is Metaprogramming
+
+- What is Singleton Method
+
+# A method given only to a single object is called a singleton method.
+# a = Class.new
+# def a.hello
+#   "Hello"
+# end
+
 - Where to use Metaprogramming
+
 - Ways to invoke system call
+ # system "command"
+ # `` without output, only errors
+ 
 - What is distributed programming
+
 - What is Socket
+
 - What is the use of Destructive Method
+
+ # The exclamation point indicates something destructive can occur.
+
 - What is the use of load and require in Ruby
+
+ # load requires explicitly point the file extension, require does it automatically
+ # secnd try to require will return false if first is successfull
+
 - What is the use of autoload in Ruby
+
 - How do nil and false differ
+
 - How is visibility of methods change in Ruby
+
 - What are the rules and conventions to be followed in Ruby for naming a method
+
+ # method should be a verb
+
 - How is class method defined in Ruby
+ 
+ # def self.method_name
+ #   "1 way"
+ # end
+ # def ClassName.method_name
+ #   "2 way"
+ # end
+ # class << self
+ # def method_name
+ #   "3 way"
+ # end
+
 - What are the Operators available in Ruby
+ # + - * % < > && || / <=> <= >= ** == != === += -= *= /= %= **= & | ^ ~ << >> .. ... ? : 
 - What are the looping structure available in Ruby
+
+ # loop do
+ # while do
+ # until do
+ # for in do
+ # foreach
+
 - What is the scope of local variable
+
 - What are the OOP supported by Ruby
+
 - Garbage collection in Ruby
+
 - Environment Variables in Ruby
+
 - What are Float, Dig and Max
+
 - What kind of conditions ruby support
+
 - Difference between puts and print
+
 - What is Agile methodology
+
 - What are Agile methodology's Processes
+
 - Is there any technology apart from agile which we can use
+
 - What are the servers supported by ruby on rails application
+
 - method overloading in ruby
+
 - method overriding in ruby
+
 - Describe the singleton design pattern and how you might use it in practice
+
 - Describe the MVC design pattern in Ruby
+
 - Big O notation in Ruby
+
 - AND, OR, XOR and NOT in Ruby
+
 - Depth first tree traversal in Ruby
+
 - String interpolation
+
 - Duck typing
+
+ # Duck Typing means an object type is defined by what it can do, not by what it is
+
 - How to undersand 'Everythin is expression'
+
 - What is dynamic reflection
+
 - Exception handling
+ #
+ #
+ #
+ #
+ #
+ #
 - Unicode Support
+ #
+ #
+ #
+ #
+ #
+ #
 - What is method_missing
+ #
+ #
+ #
+ #
+ #
+ #
 - Ruby Equality And Object Comparison
+ #
+ #
+ #
+ #
+ #
+ #
 - How A Ruby Case Statement Works
+ #
+ #
+ #
+ #
+ #
+ #
+ #
 - How do you write to STDOUT in Ruby?
+ #
+ #
+ #
+ #
+ #
+ #
 - Ruby language’s weaknesses
+ #
+ #
+ #
+ #
+ #
+ #
 - Compare and contrast Ruby with your second-favorite language
+ #
+ #
+ #
+ #
+ #
+ #
+ #
 - What is IO in Ruby
+ #
+ #
+ #
+ #
+ #
+ #
 - What is the super class of Module?
+ #
+ #
+ #
+ #
+ #
+ #
+ #
 - What is the difference between a block, lamda and proc
+ #
+ #
+ #
+ #
+ #
+ #
+ #
 - What do you like about Ruby
+ #
+ #
+ #
+ #
+ #
+ #
+ #
 - What is polymorphism
+ #
+ #
+ #
+ #
+ #
+ #
+ #
 - What is overriding and oveloading

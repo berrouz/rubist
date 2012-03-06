@@ -1,0 +1,12 @@
+﻿# amend
+
+git commit --amend
+In order to avoid invoking editor add this:
+
+git config --global alias.amend 'commit --amend -C HEAD'
+
+
+#push
+
+
+git push -f  - pushes amended commmits if you've already done push previously

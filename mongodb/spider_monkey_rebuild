@@ -1,0 +1,11 @@
+# How to rebuild Spider Monkey
+Actually Spider Monkey allows to exploit UTF-8 coding . MongoDB uses SpiderMonkey for server-side Javascript execution.
+
+curl -O ftp://ftp.mozilla.org/pub/mozilla.org/js/js-1.7.0.tar.gz
+tar zxvf js-1.7.0.tar.gz
+
+cd js/src
+export CFLAGS="-DJS_C_STRINGS_ARE_UTF8"
+make -f Makefile.ref
+
+SpiderMonkey does not use UTF-8 by default, so we enable before building.
