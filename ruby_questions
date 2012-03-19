@@ -51,6 +51,11 @@
 
 
 - What is Module
+ 
+ # Modules are a way of grouping together methods, classes, and constants. Modules give you two major benefits.
+ # Modules provide a namespace and prevent name clashes.
+ # Modules implement the mixin facility.
+ # Modules define a namespace, a sandbox in which your methods and constants can play without having to worry about being stepped on by other methods and constants.
 
 - What is the difference between Class & Module
  # Classes can not be instantiated
@@ -94,6 +99,9 @@
 - What is lambda
 
 - What is the difference between lambda & Proc
+
+ # Proc accepts any numbers of arguments, lambda is gonna raise ArgumentError
+ # Proc returns value into upper context, lambda continues its execution
 
 - Where could we use Proc and where lambda
 
