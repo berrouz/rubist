@@ -1,3 +1,19 @@
-﻿arr = [5,6,23,12,9,1,7,2,3]
-arr.each_index {|i| arr[i-1] <  arr[i] }
-puts arr
+﻿module Tryl
+   puts self
+  class << self
+    def hello
+      puts "Hello from class method"
+    end
+  end
+  
+  def hello
+    puts "Hello from instance method"
+  end
+end
+
+
+class Own
+  include Tryl
+end
+
+Own.hello

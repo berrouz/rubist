@@ -5,7 +5,7 @@
 - When it was designed and developed, by whom
 
  # mid 1990s by Yukihiro Matzumoto, appeared only in 1995
- 
+
 - Versions of Ruby
 
  # 0.95 Dec 21 1995
@@ -18,54 +18,75 @@
  # 1.9.2
  # 1.9.3-p0 Oct 30 2011
  # 2.0 in development
- 
+
 - Explain the use of $ global variable
 
  # Before initialization $var has nil as a value. Global variables should be used sparingly. The are dangerous because they can be written to from anywhere.
  # Global variables can be traced.
- 
+
 - What is class
 
  # class is a custom type of data. Classes could have fields and methods.
- 
+
 - What is Nil
- 
+
  # nil.class => NilClass
  # nil == nil
  # nil.object_id = 4
- 
+
 - What is True/False
 
  # true/false realized as objects of TrueClass and FalseClass. They are both singletons. That's why false == false && true == true
- 
+
 - What is Object
 
- # Object is the root of Ruby's class hierarchy. Its methods are available to all classes unless 
+ # Object is the root of Ruby's class hierarchy. Its methods are available to all classes unless
  # explicitly overriden.
 
 - What is BasicObject
 
  # BasicObject is the parent class of all classes in Ruby. It's an explicit blank class.
- # BasicObject can be used for creating object hierarchies independent of Ruby's object hierarchy, 
+ # BasicObject can be used for creating object hierarchies independent of Ruby's object hierarchy,
  # proxy objects like the Delegator class, or other uses where namespace pollution from Ruby's methods and classes must be avoided.
- 
- 
+
+
 - What is Module
 
 - What is the difference between Class & Module
+ # Classes can not be instantiated
+ # Modules can be included in other classes
+ # Modules can be used in two 2 ways: mixin or namespace
 
 - What is Ternary Operator
 
+ # a == true ? "Yes" : "No"
+
 - Ruby convention
+
+ # classes - starts with Capital, may consist of several works, each should start with Capital letter
+ # methods- should be verbs describing actions
+ # modules(mixin) - should describe property and
+ # constants - all capitals
+ # variables - several words with underscores
 
 - Inheritance
 
+ # is a way to reuse code of existing objects, establish a subtype from an existing object
+
 - OOP in Ruby
+
+ # is a programming paradigm using 'objects' - data structures consisting of data fields and methods together
+ # - data abstraction
+ # - encapsulation
+ # - messaging
+ # - modularity
+ # - polymorphism
+ # - inheritance
 
 - What is the difference between include and extend
 
  # include adds methods from Module as instance methods, extend adds as class methods
- 
+
 - What is Fiber
 
 - What is Proc
@@ -80,11 +101,11 @@
 
 - What is self
 
-# self refers to the current receiver object. It might be class( an object of class Class) || be an instance of particular class. 
+# self refers to the current receiver object. It might be class( an object of class Class) || be an instance of particular class.
 
 - What is attr_accessor
 
-# method which creates settes and getters 
+# method which creates settes and getters
 
 - What is private, public, protected access control
 
@@ -95,6 +116,9 @@
 - What is block
 
 - Ways to invoke block
+ # http://innig.net/software/ruby/closures-in-ruby
+ # block.call is slower
+ # yield
 
 - Exceptions
 
@@ -147,7 +171,7 @@
 - Ways to invoke system call
  # system "command"
  # `` without output, only errors
- 
+
 - What is distributed programming
 
 - What is Socket
@@ -172,7 +196,7 @@
  # method should be a verb
 
 - How is class method defined in Ruby
- 
+
  # def self.method_name
  #   "1 way"
  # end
@@ -185,7 +209,7 @@
  # end
 
 - What are the Operators available in Ruby
- # + - * % < > && || / <=> <= >= ** == != === += -= *= /= %= **= & | ^ ~ << >> .. ... ? : 
+ # + - * % < > && || / <=> <= >= ** == != === += -= *= /= %= **= & | ^ ~ << >> .. ... ? :
 - What are the looping structure available in Ruby
 
  # loop do
