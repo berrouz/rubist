@@ -1,3 +1,20 @@
 - Show me a cool project you’ve worked on. How did you do it
+
 - Last but not least, tell me something about the following principles:
   DRY, SOLID, YAGNI, optimistic vs. pessimistic locking, MVC vs. MVVM, (list can go on…)
+
+- Functional programming
+
+ # functional programming is a programming paradigm that treats computation as the evaluation
+ # of mathematical functions and avoids state and mutable data
+ # The biggest difference is that Imperative programming is about Control flow while Functional programming is about Data flow
+ 
+- Proc functional programming
+
+ # Often recursive.
+ # Always returns the same output for a given input.
+ # Order of evaluation is usually undefined.
+ # Must be stateless. i.e. No operation can have side effects.
+ # Good fit for parallel execution
+ # Tends to emphasize a divide and conquer approach.
+ # May have the feature of Lazy Evaluation.
